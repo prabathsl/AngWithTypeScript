@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html ng-app="LableEditor">
+<head>
+	
+	<title>Type Script eith AngularJs</title>
+	<meta charset="utf-8" />
+</head>
+<body>
+	<div ng-controller="LableColection as vm">
+		<ul>
+			<li contenteditable ng-repeat="lable in vm.sequence">
+				{{lable.Name}}
+			</li>
+		</ul>
+	</div>
+
+
+	<script src="Scripts/angular.js"></script>
+	<script src="App_Scripts/LableEditor.js"></script>
+	<script src="App_Scripts/LableCollcetion.js"></script>
+	<script src="App_Scripts/ContentEditor.js"></script>
+</body>
+</html>
